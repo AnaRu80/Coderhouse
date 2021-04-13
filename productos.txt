@@ -1,0 +1,38 @@
+[
+  {
+    "title": "title0",
+    "precio": 0,
+    "tumbnail": "https://images.pexels.com/photos/45170/kittens-cat-cat-puppy-rush-45170.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
+    "id": 1
+  },
+  {
+    "title": "title1",
+    "precio": 10,
+    "tumbnail": "https://images.pexels.com/photos/45170/kittens-cat-cat-puppy-rush-45170.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
+    "id": 2
+  },
+  {
+    "title": "title2",
+    "precio": 20,
+    "tumbnail": "https://images.pexels.com/photos/45170/kittens-cat-cat-puppy-rush-45170.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
+    "id": 3
+  },
+  {
+    "title": "title3",
+    "precio": 30,
+    "tumbnail": "https://images.pexels.com/photos/45170/kittens-cat-cat-puppy-rush-45170.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
+    "id": 4
+  },
+  {
+    "title": "title4",
+    "precio": 40,
+    "tumbnail": "https://images.pexels.com/photos/45170/kittens-cat-cat-puppy-rush-45170.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
+    "id": 5
+  },
+  {
+    "title": "title5",
+    "precio": 50,
+    "tumbnail": "https://images.pexels.com/photos/45170/kittens-cat-cat-puppy-rush-45170.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
+    "id": 6
+  }
+]
