@@ -1,0 +1,20 @@
+[
+  {
+    "title": "Escuadra",
+    "price":123.45,
+    "thumbnail":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSd5cL7Ftr1EZnabizW35Z0VWZAekg6u4sQYw&usqp=CAU",
+    "id":1
+  },
+  {
+    "title": "Calculadora",
+    "price":234.56,
+    "thumbnail":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIQO8h5_J5gLeosbw9CBrfohyuZVA62ZbfIw&usqp=CAU",
+     "id":2
+  },
+  {
+    "title": "Globo Terráqueo",
+    "price":345.67,
+    "thumbnail":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTytMoEUZ1xdN8aHX-U6KkjWKMSSYqNrGuprw&usqp=CAU",
+    "id":3 
+  }
+]
