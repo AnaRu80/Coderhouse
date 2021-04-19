@@ -11,7 +11,7 @@ app.get('/items',(req,res)=>{
     res.json({items:productos, cantidad:productos.length})
 })
 
-let data= JSON.parse( fs.readFileSync("src/productos.txt", "utf-8"))
+let data= JSON.parse( fs.readFileSync("productos.txt", "utf-8"))
 let numRandom=Math.floor(Math.random() * data.length) + 1; 
 let dataRandom=data[parseInt(numRandom)]
 
