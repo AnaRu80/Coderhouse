@@ -1,12 +1,23 @@
 {
-  "name": "clase6",
+  "name": "Coderhouse",
   "version": "1.0.0",
-  "main": "clase.js",
+  "description": "",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AnaRu80/Coderhouse.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": ""
+  "bugs": {
+    "url": "https://github.com/AnaRu80/Coderhouse/issues"
+  },
+  "homepage": "https://github.com/AnaRu80/Coderhouse#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }
