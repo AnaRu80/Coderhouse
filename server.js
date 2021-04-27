@@ -26,7 +26,7 @@ app.get('/about',function(req,res){
 // const productRouter = require('./routes/Products')
 // const frontRoutes = require("./routes/front")
 
-// app.use(express.json());
+app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(express.static("public"))
 

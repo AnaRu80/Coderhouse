@@ -30,11 +30,13 @@ router.post("/productos/", (req, res) => {
 
 });
 
-router.put("/productos/actualizar/:id", (req, res) => {
+router.put("/productos/actualizar/:id/", (req, res) => {
   const data = req.body;
   const {id} = req.params
-  const updateProd=product.update(id,data)
-  console.log("ver",updateProd)
+
+  let updateProd=product.update(id,data)
+  console.log("pur lik",updateProd)
+
   if (updateProd){
     res.status(201).json(data);
   }
