@@ -77,4 +77,4 @@ class ProductController{
 
 }
 
-module.exports= new ProductController();
+export default new ProductController();

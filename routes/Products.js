@@ -1,17 +1,20 @@
-const express = require('express')
+import express from 'express'
 const router = express.Router()
-const product = require("../controllers/Product")
+import product from '../controllers/Product.js'
 
 router.get("/productos/", (req, res) => {
     const products= product.get()
-  if (!products) {
-    return res.status(404).json({
-      error: "no hay productos cargados",
-    });
-  }
+    res.render("productos/listado",{
+      products:products
+    })
+  // if (!products) {
+  //   return res.status(404).json({
+  //     error: "no hay productos cargados",
+  //   });
+  // }
 
   
-  res.json(products);
+  // res.json(products);
 });
 
 router.post("/productos/", (req, res) => {
@@ -56,4 +59,4 @@ router.delete("/productos/borrar/:id", (req, res) => {
   res.json(eliminado);
 });
 
-module.exports = router
+export default router

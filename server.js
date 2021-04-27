@@ -1,16 +1,36 @@
-const express = require("express");
+import express from 'express'
+import exphbs from 'express-handlebars'
+import productRouter from './routes/Products.js'
+
 const app = express();
 
-// Ruta de productos y de front
-const productRouter = require('./routes/Products')
-const frontRoutes = require("./routes/front")
+app.engine('hbs',exphbs({
+    extname:"hbs"
+}))
 
-app.use(express.json());
+app.set('view engine','hbs')
+
+app.get('/',function(req,res){
+    res.render('home',{
+        firstName:"Ana",
+        lastName:"Ruiz"
+    })
+})
+
+app.get('/about',function(req,res){
+    res.render('about')
+})
+ 
+// Ruta de productos y de front
+// const productRouter = require('./routes/Products')
+// const frontRoutes = require("./routes/front")
+
+// app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(express.static("public"))
 
 app.use("/api", productRouter)
 
-app.use("/web",frontRoutes)
+// app.use("/web",frontRoutes)
 
 app.listen(8080);
