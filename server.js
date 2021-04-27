@@ -1,6 +1,7 @@
 import express from 'express'
 import exphbs from 'express-handlebars'
 import productRouter from './routes/Products.js'
+import frontRoutes from './routes/front.js'
 
 const app = express();
 
@@ -31,6 +32,6 @@ app.use(express.static("public"))
 
 app.use("/api", productRouter)
 
-// app.use("/web",frontRoutes)
+app.use("/web",frontRoutes)
 
 app.listen(8080);

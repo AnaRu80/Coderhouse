@@ -19,15 +19,15 @@ router.get("/productos/", (req, res) => {
 
 router.post("/productos/", (req, res) => {
   const data = req.body;
-  console.log(req.body)
+  console.log("dataaa post>",req.body)
   if (product.add(data)){
     if(data.form === "1") return res.redirect('http://localhost:8080/web');
-    res.status(201).json(data);
-  }
+    // res.status(201).json(data);
+    console.log("hola")
+    res.redirect('http://localhost:8080/web');  }
   
-  
+    res.status(400).send()
 
-  res.status(400).send()
 });
 
 router.put("/productos/actualizar/:id", (req, res) => {

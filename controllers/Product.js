@@ -28,7 +28,7 @@ class ProductController{
     constructor(){}
 
     add(data){
-      console.log(data)
+      console.log("data",data)
       if(data.name === '' || typeof data.name ==="undefined") return false;
         data.id = PRODUCTS_DB.length + 1;
         PRODUCTS_DB.push({
