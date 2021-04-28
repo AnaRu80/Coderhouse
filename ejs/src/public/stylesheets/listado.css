@@ -12,13 +12,3 @@
     width: 140px
 }
 
-.addProd{
-    width: 25%;
-    border: none;
-    border-radius: 1rem;
-    padding: 1.5%;
-    background: #e2bb1e;
-    font-weight: 600;
-    color: #fff;
-    cursor: pointer;
-}

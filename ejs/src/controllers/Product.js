@@ -1,27 +1,25 @@
 
 let PRODUCTS_DB=[
+    {
+      "name": "Jabon",
+      "precio":25,
+      "thumbnail": "https://cdn4.iconfinder.com/data/icons/stop-virus-outline-iconset/128/ic_soap-256.png",
+      "id":1
+  },
   {
-    "name": "Jabon",
+    "name": "Calcetines",
     "precio":25,
-    "thumbnail": "https://cdn4.iconfinder.com/data/icons/stop-virus-outline-iconset/128/ic_soap-256.png",
-    "id":1
-},
-{
-  "name": "Calcetines",
-  "precio":25,
-  "thumbnail": "https://cdn4.iconfinder.com/data/icons/free-color-christmas-icons/24/Xmas_Socks-256.png",
-  "id": 2
-},
-{
-  "name": "leche",
-    "precio":25,
-    "thumbnail": "https://cdn2.iconfinder.com/data/icons/bakery-kitchen-3/512/milk-drink-bottle-256.png",
-    "id": 3
-}
-
-];
-
-
+    "thumbnail": "https://cdn4.iconfinder.com/data/icons/free-color-christmas-icons/24/Xmas_Socks-256.png",
+    "id": 2
+  },
+  {
+    "name": "leche",
+      "precio":25,
+      "thumbnail": "https://cdn2.iconfinder.com/data/icons/bakery-kitchen-3/512/milk-drink-bottle-256.png",
+      "id": 3
+  }
+  
+  ];
   
   
   
