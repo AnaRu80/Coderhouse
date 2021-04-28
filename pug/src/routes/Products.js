@@ -4,7 +4,7 @@ import product from '../controllers/Product.js'
 
 router.get("/productos/", (req, res) => {
     const products= product.get()
-    res.render("productos/listado",{
+    res.render("listado",{
       products:products
     })
   // if (!products) {

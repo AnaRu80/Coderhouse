@@ -1,0 +1,46 @@
+//- index.pug
+extends layout
+
+block content 
+    .listado
+        .container.py-5
+            .row.text-center.text-white.mb-5
+                .col-lg-7.mx-auto
+                    h1.display-4 Lista de Productos
+            .row
+                .col-7.mx-auto
+                     a(href='/web')
+                        button.text-dark Agregar Productos productos
+            .row
+                .col-lg-8.mx-auto
+                    // List group
+                    ul.list-group.shadow
+                        if products
+                            // list group item
+                            each n in products
+                                li.list-group-item
+                                    // Custom content
+                                    .media.align-items-lg-center.flex-column.flex-lg-row.p-3
+                                        .media-body.order-2.order-lg-1
+                                            h2.mt-0.font-weight-bold.mb-2= n.name
+                                        
+                                            .d-flex.align-items-center.justify-content-between.mt-1
+                                                h3.font-weight-bold.my-2.text-center= n.precio
+                                                ul.list-inline.small
+                                                    li.list-inline-item.m-0
+                                                        i.fa.fa-star.text-success
+                                                    li.list-inline-item.m-0
+                                                        i.fa.fa-star.text-success
+                                                    li.list-inline-item.m-0
+                                                        i.fa.fa-star.text-success
+                                                    li.list-inline-item.m-0
+                                                        i.fa.fa-star.text-success
+                                                    li.list-inline-item.m-0
+                                                        i.fa.fa-star-o.text-gray
+                                        img.ml-lg-5.order-1.order-lg-2(src=n.thumbnail alt='Generic placeholder image' width='200')
+                                  
+                        else
+                            p.text-light No se encontraron productos
+        // End
+    include foot.pug
+    
