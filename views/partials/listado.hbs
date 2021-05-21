@@ -1,0 +1,49 @@
+{{!-- {{#if products}}
+  {{#each products}}
+      <li>Nombre: {{this.name}}</li>
+      <li>Thumbnail:{{this.thumbnail}}</li>
+      <li>Precio: {{this.precio}}</li>
+      <li>ID: {{this.id}}</li>
+    {{/each}}
+{{else}}
+  <p>No se encontraron productos</p>  
+  
+{{/if}} --}}
+
+<div class='container py-5'>
+  <div class='row text-center text-dark mb-5'>
+    <div class='col-lg-7 mx-auto'>
+      <h1 class='display-4'>Lista de Productos</h1>
+    </div>
+  </div>
+  <div class='row'>
+    <div class='col-lg-8 mx-auto'>
+      <!-- List group-->
+      <ul class='wrapper list-group shadow'>
+        <!-- list group item-->
+
+        {{!-- {{#if products}}
+                  {{#each products}} --}}
+        {{! <li class='list-group-item'> }}
+        <!-- Custom content-->
+
+        <!-- End -->
+        {{! </li> }}
+        <!-- End -->
+
+        {{!-- {{/each}}
+                  {{else}} --}}
+        {{! <p class='text-light'>No se encontraron productos</p> }}
+
+        {{!-- {{/if}} --}}
+
+      </ul>
+      <!-- End -->
+    </div>
+  </div>
+</div>
+
+<style>
+  body { background: linear-gradient(to right, #c04848, #480048); min-height:
+  100vh } .text-gray { color: #aaa } img { height: 170px; width: 140px }
+</style>
